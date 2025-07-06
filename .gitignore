@@ -1,0 +1,41 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/ # If using pnpm
+
+# Build artifacts for all projects
+dist/
+build/
+out/
+.next/ # For Next.js projects
+.vite/ # For Vite projects
+.parcel-cache/ # For Parcel projects
+.svelte-kit/ # For SvelteKit projects
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and Editor files
+.idea/ # IntelliJ IDEA
+.vscode/ # VS Code (if you have user-specific settings you don't want to commit)
+*.iml # IntelliJ IDEA
+.DS_Store # macOS specific
+Thumbs.db # Windows specific
+
+# Logs
+*.log
+
+# Test coverage reports
+coverage/
+
+# Misc
+.cache/
+.eslintcache
+.nyc_output/
+*.tgz # npm pack output
