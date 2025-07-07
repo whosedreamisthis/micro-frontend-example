@@ -2,15 +2,18 @@ import React from 'react';
 import { Switch, Route, Router } from 'react-router-dom';
 import { StylesProvider } from '@material-ui/core/styles';
 
-// import Landing from './components/Landing';
-// import Pricing from './components/Pricing';
+import SignIn from './components/Signin';
+import SignUp from './components/Signup';
 
 export default ({ history }) => {
 	return (
 		<div>
 			<StylesProvider>
 				<Router history={history}>
-					<Switch></Switch>
+					<Switch>
+						<Route path="/auth/signin" component={SignIn} />
+						<Route path="/auth/signup" component={SignUp} />
+					</Switch>
 				</Router>
 			</StylesProvider>
 		</div>
